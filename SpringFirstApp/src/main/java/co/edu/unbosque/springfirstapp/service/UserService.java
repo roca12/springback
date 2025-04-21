@@ -26,6 +26,7 @@ public class UserService implements CRUDOperation<UserDTO> {
 
   @Override
   public boolean exist(Long id) {
+
     return userRepo.existsById(id);
   }
 
