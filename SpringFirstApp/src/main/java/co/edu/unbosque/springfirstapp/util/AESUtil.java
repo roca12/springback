@@ -17,7 +17,7 @@ public class AESUtil {
 
 	private final static String ALGORITMO = "AES";
 
-	private final static String TIPOCIFRADO = "AES/CBC/PKCS5Padding";
+	private final static String TIPOCIFRADO = "AES/GCM/NoPadding";
 
 	public static String encrypt(String llave, String iv, String texto) {
 		Cipher cipher = null;
