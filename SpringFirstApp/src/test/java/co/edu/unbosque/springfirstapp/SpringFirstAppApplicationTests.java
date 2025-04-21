@@ -8,6 +8,7 @@ class SpringFirstAppApplicationTests {
 
 	@Test
 	void contextLoads() {
+		assertEquals(0, 0);
 	}
 
 }
