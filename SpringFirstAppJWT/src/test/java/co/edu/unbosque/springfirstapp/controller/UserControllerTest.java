@@ -28,7 +28,7 @@ import org.springframework.http.ResponseEntity;
  * @version 0.1
  */
 @SpringBootTest
-public class UserControllerTest {
+class UserControllerTest {
 
   @Mock private UserService userService;
 
