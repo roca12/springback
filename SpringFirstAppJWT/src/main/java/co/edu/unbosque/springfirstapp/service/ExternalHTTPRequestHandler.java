@@ -24,7 +24,7 @@ public class ExternalHTTPRequestHandler {
 	 * Cliente HTTP compartido para realizar peticiones.
 	 * Configurado con HTTP/2 y un tiempo de espera de conexión de 10 segundos.
 	 */
-	private static final HttpClient HTTP_CLIENT = HttpClient.newBuilder().version(HttpClient.Version.HTTP_2)
-			.connectTimeout(Duration.ofSeconds(10)).build();
-
+//	private static final HttpClient HTTP_CLIENT = HttpClient.newBuilder().version(HttpClient.Version.HTTP_2)
+//			.connectTimeout(Duration.ofSeconds(10)).build();
+//
 }

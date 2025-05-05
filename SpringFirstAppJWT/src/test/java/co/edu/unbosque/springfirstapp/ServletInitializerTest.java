@@ -16,7 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
  * @version 0.1
  */
 @SpringBootTest
-public class ServletInitializerTest {
+class ServletInitializerTest {
 
   /**
    * Prueba que el método configure devuelve un SpringApplicationBuilder configurado.
@@ -25,7 +25,7 @@ public class ServletInitializerTest {
    * el SpringApplicationBuilder con la clase principal de la aplicación.
    */
   @Test
-  public void testConfigure() {
+   void testConfigure() {
     ServletInitializer initializer = new ServletInitializer();
     SpringApplicationBuilder builder = new SpringApplicationBuilder();
 

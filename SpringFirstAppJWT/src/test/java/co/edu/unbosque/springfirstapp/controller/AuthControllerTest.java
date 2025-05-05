@@ -30,7 +30,7 @@ import org.springframework.security.core.Authentication;
  * @version 0.1
  */
 @SpringBootTest
-public class AuthControllerTest {
+ class AuthControllerTest {
 
   @Autowired private AuthController authController;
 
@@ -49,7 +49,7 @@ public class AuthControllerTest {
    * @throws Exception si falla el procesamiento JSON
    */
   @Test
-  public void testLoginReturnsRoleInResponse() throws Exception {
+   void testLoginReturnsRoleInResponse() throws Exception {
     // Crear usuario de prueba con rol ADMIN
     User user = new User("testuser", "password");
     user.setRole(Role.ADMIN);

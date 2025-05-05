@@ -16,7 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
  * @version 0.1
  */
 @SpringBootTest
-public class PasswordNotValidExceptionTest {
+ class PasswordNotValidExceptionTest {
 
   /**
    * Prueba que la excepción se crea correctamente con el mensaje de error adecuado.
@@ -25,7 +25,7 @@ public class PasswordNotValidExceptionTest {
    * error contiene la información esperada sobre los requisitos de contraseña.
    */
   @Test
-  public void testExceptionMessage() {
+   void testExceptionMessage() {
     PasswordNotValidException exception = new PasswordNotValidException();
 
     assertNotNull(exception.getMessage(), "El mensaje de error no debe ser nulo");
