@@ -38,7 +38,7 @@ class UserControllerTest {
 
   /** Configura los objetos necesarios antes de cada prueba. */
   @BeforeEach
-   void setup() {
+  void setup() {
     testUser = new UserDTO();
     testUser.setUsername("testuser");
     testUser.setPassword("Password123!");
@@ -52,7 +52,7 @@ class UserControllerTest {
    * mensaje de éxito cuando se crea un usuario correctamente.
    */
   @Test
-   void testCreateNewWithJSONSuccess() {
+  void testCreateNewWithJSONSuccess() {
     when(userService.create(any(UserDTO.class))).thenReturn(0);
 
     ResponseEntity<String> response = userController.createNewWithJSON(testUser);
@@ -68,7 +68,7 @@ class UserControllerTest {
    * mensaje de error cuando se intenta crear un usuario con un nombre que ya existe.
    */
   @Test
-   void testCreateNewWithJSONUserExists() {
+  void testCreateNewWithJSONUserExists() {
     when(userService.create(any(UserDTO.class))).thenReturn(1);
 
     ResponseEntity<String> response = userController.createNewWithJSON(testUser);
@@ -86,7 +86,7 @@ class UserControllerTest {
    * 200 cuando hay usuarios en el sistema.
    */
   @Test
-   void testGetAllUsers() {
+  void testGetAllUsers() {
     List<UserDTO> users = Arrays.asList(testUser);
     when(userService.getAll()).thenReturn(users);
 

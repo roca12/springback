@@ -25,7 +25,7 @@ class ServletInitializerTest {
    * el SpringApplicationBuilder con la clase principal de la aplicación.
    */
   @Test
-   void testConfigure() {
+  void testConfigure() {
     ServletInitializer initializer = new ServletInitializer();
     SpringApplicationBuilder builder = new SpringApplicationBuilder();
 

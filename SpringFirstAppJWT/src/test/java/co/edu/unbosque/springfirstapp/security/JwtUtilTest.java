@@ -19,7 +19,7 @@ import org.springframework.boot.test.context.SpringBootTest;
  * @version 0.1
  */
 @SpringBootTest
- class JwtUtilTest {
+class JwtUtilTest {
 
   @Autowired private JwtUtil jwtUtil;
 
@@ -31,7 +31,7 @@ import org.springframework.boot.test.context.SpringBootTest;
    * usuario 3. Extrae el rol del token 4. Verifica que el rol extraído coincida con el rol original
    */
   @Test
-   void testRoleIsIncludedInJwtToken() {
+  void testRoleIsIncludedInJwtToken() {
     // Crear un usuario de prueba con rol ADMIN
     User user = new User("testuser", "password");
     user.setRole(Role.ADMIN);
