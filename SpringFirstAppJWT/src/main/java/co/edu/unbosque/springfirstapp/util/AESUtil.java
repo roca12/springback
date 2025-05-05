@@ -181,23 +181,23 @@ public class AESUtil {
 
 
 
-//	public static void main(String[] args) {
-//		String texto = "zambrano lo robaron hace meses";
-//		System.out.println(texto);
-//
-//		String codificado = encrypt(texto);
-//		System.out.println(codificado);
-//
-//		String decodificado = decrypt(codificado);
-//		System.out.println(decodificado);
-//
-//		String contrasena="soyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseña";
-//		System.out.println(hashingToMD5(contrasena));
-//		System.out.println(hashingToSHA1(contrasena));
-//		System.out.println(hashingToSHA256(contrasena));
-//		System.out.println(hashingToSHA384(contrasena));
-//		System.out.println(hashingToSHA512(contrasena));
-//	}
+	public static void main(String[] args) {
+		String texto = "zambrano lo robaron hace meses";
+		System.out.println(texto);
+
+		String codificado = encrypt(texto);
+		System.out.println(codificado);
+
+		String decodificado = decrypt(codificado);
+		System.out.println(decodificado);
+
+		String contrasena="soyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseñasoyunacontraseña";
+		System.out.println(hashingToMD5(contrasena));
+		System.out.println(hashingToSHA1(contrasena));
+		System.out.println(hashingToSHA256(contrasena));
+		System.out.println(hashingToSHA384(contrasena));
+		System.out.println(hashingToSHA512(contrasena));
+	}
 
 	
 	
