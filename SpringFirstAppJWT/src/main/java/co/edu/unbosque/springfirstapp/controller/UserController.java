@@ -459,6 +459,7 @@ public class UserController {
                     mediaType = "application/json",
                     examples = @ExampleObject(value = "Error al actualizar")))
       })
+  
   @PutMapping(path = "/updatejson", consumes = MediaType.APPLICATION_JSON_VALUE)
   ResponseEntity<String> updateNewWithJSON(
       @Parameter(description = "ID del usuario a actualizar", required = true, example = "1")
@@ -493,7 +494,16 @@ public class UserController {
       return new ResponseEntity<>("Error al actualizar", HttpStatus.BAD_REQUEST);
     }
   }
-
+  
+  /**
+   * Actualiza un usuario por su ID, ingresando nuevo nombre de usuario, contraseña y rol. Requiere rol ADMIN.
+   *
+   * @param id ID del usuario a eliminar
+   * @param newUsername nuevo username del usuario a actualizar
+   * @param newPassword nuevo password del usuario a actualizar
+   * @param role nuevo rol del usuario a actualizar
+   * @return ResponseEntity con mensaje de éxito o error
+   */
   @Operation(
       summary = "Actualizar usuario (parámetros)",
       description =
